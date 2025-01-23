@@ -1,16 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
-  </body>
-</html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Услуги и сервисы</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__menu-logo">
+                    <button class="header__menu-btn">
+                    </button>
+                    <a href="" class="header__link">
+                        <img src="img/Group.svg" alt="Логотип" class="header__logo-img">
+                    </a>
+                </div>
+                <div class="header__wrapper-group-btn">
+                <div class="header__tablet-wrapper-btn tablet-only">
+                    
+                    <button class="header__btn-call">
+                    </button>
+                    <button class="header__btn-chat">
+                    </button>
+                    <button class="header__btn-profile">
+                    </button>
+                </div>
+                <div class="header__btn-inner">
+                    <button class="header__btn-repair">
+                    </button>
+                    <button class="header__btn-check">
+                    </button>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__top">
+            <h1 class="main__title">Услуги и сервисы</h1>
+            <div class="main__btn-inner desctop-only">
+                <button class="main__btn-repair">
+                    <span class="main__btn-name">Оставить заявку</span>
+                </button>
+                <button class="main__btn-group">
+                    <span class="main__btn-checkstatus" >Статус ремонта</span>
+                </button>
+            </div>
+            </div>
+            <nav class="main__nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Ремонтируемые бренды</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Ремонтируемые устройства</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Цены на услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Адреса сервисных центров</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Специальные цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Добавил еще одну кнопку, чтобы была реализация в два ряда</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main__section">
+            <div class="main__text-button">
+                <p class="main__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p class="main__text tablet-only">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+            <p class="main__textsub desctop-only">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            <div class="main__button-wrapper">
+            <button class="main__button">
+                Читать далее
+            </button>
+        </div>
+            </div>
+            <img src="img/Picture_Copy.jpg" alt="Фотография логотипа компании" class="main__img">
+        </div>
+        </div>
+    </main>
+
+    <div class="product-logos">
+        <div class="product__title">
+            <h1 class='product__text'>Ремонт техники различных брендов</h1>
+        </div>
+        <div class="container">
+            <div class="swiper">
+                <div class="product-logos__wrppaer swiper-wrapper">
+                    <a href="" class="product-logos__link swiper-slide">
+                        <div class="product-logos__inner"><img src="img/Bitmap.png" alt="Логотип Lenovo" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link swiper-slide">
+                        <div class="product-logos__inner"><img src="img/samsung.png" alt="Логотип samsung" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link swiper-slide">
+                        <div class="product-logos__inner"><img src="img/apple.png" alt="Логотип Apple" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link swiper-slide">
+                        <div class="product-logos__inner"><img src="img/sonic.png" alt="Логотип Sonic" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link swiper-slide">
+                        <div class="product-logos__inner"><img src="img/bosch.png" alt="Логотип Bosh" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link swiper-slide">
+                        <div class="product-logos__inner"><img src="img/hp.png" alt="Логотип HP" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link desctop__table swiper-slide">
+                        <div class="product-logos__inner"><img src="img/acerr.png" alt="Логотип Acer" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link desctop__table swiper-slide">
+                        <div class="product-logos__inner swiper-slide"><img src="img/sony.png" alt="Логотип Sony"
+                                class="product-logos__img"></div>
+                    </a>
+                    <a href="" class="product-logos__link desctop__table hidden swiper-slide">
+                        <div class="product-logos__inner"><img src="img/Bitmap.png" alt="Логотип Lenovo" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link desctop__table hidden swiper-slide">
+                        <div class="product-logos__inner"><img src="img/Bitmap.png" alt="Логотип Lenovo" class="product-logos__img">
+                        </div>
+                    </a>
+                    <a href="" class="product-logos__link desctop__table hidden swiper-slide">
+                        <div class="product-logos__inner"><img src="img/Bitmap.png" alt="Логотип Lenovo" class="product-logos__img">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+            <button class="button-open">Показать все</button>
+            <!-- <button class="button-close hidden">Скрыть</button> -->
+        </div>
+    </div>
+
+<div class="repair">
+<div class="container">
+
+
+    <div class="repair__tittle">
+<h2>
+    Ремонт различных видов техники
+</h2>    
+</div>
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <a class="repair__wrapper swiper-slide"><div class="repair__text">Ремонт ноутбуков</div></a>
+      <a class="repair__wrapper swiper-slide"><div class="repair__text">Ремонт ноутбуков</div></a>
+      <a class="repair__wrapper swiper-slide"><div class="repair__text">Ремонт ноутбуков</div></a>
+      <a class="repair__wrapper swiper-slide"><div class="repair__text">Ремонт ноутбуков</div></a>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+
+
+</body> 

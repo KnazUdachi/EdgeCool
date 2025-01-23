@@ -1,17 +1,93 @@
-$bgColor: #24292e;
-$text: #fff;
+@import './header.scss';
+@import './logos.scss';
+@import './repair.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+// @font-face {
+//   font-family: 'Comic';
+//   src: url('../fonts/comic.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// body {
+//   // padding: 1rem;
+//   margin: 0;
+//   // font-family: Comic, sans-serif;
+//   background-color: $bgColor;
+//   color: $text;
+//   background-color: red;
+// }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Устанавливаем box-sizing для html */
+html {
+  box-sizing: border-box;
+}
+
+/* Общие стили для body */
 body {
-  padding: 1rem;
+  font-family: "TT Lakes", sans-serif;
+  background-color: #f8f8f8;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем маркеры у списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Стили для кнопок */
+button {
+  background: none;
+  border: none;
+  padding: 0;
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+}
+
+/* Стили для изображений */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Сброс отступов для списков с классами */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Дополнительные стили для input, textarea, select и button */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Стили для блоков с отступами и margin */
+h1, h2, h3, h4, h5, h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
