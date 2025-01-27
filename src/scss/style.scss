@@ -1,6 +1,9 @@
+@import '../fonts/stylesheet.css';
 @import './header.scss';
 @import './logos.scss';
 @import './repair.scss';
+@import './prices.scss';
+@import './footer.scss';
 
 // @font-face {
 //   font-family: 'Comic';
@@ -33,10 +36,11 @@ html {
 
 /* Общие стили для body */
 body {
-  font-family: "TT Lakes", sans-serif;
+  font-family: 'TT Lakes', sans-serif;
   background-color: #f8f8f8;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 /* Стили для ссылок */
@@ -90,4 +94,37 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+
+
+
+.title{
+  height: 56px;
+  background: linear-gradient(90deg, #f8f8f8, #ffffff);
+  border-top: 1px solid #D9FFF5;
+  margin-bottom: 24px;
+
+}
+
+@media (max-width: 768px) {
+  .title--mobile {
+    height: 80px;
+  }
+}
+
+h2{
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #7e7e82;
+    padding-top: 16px;
+    margin-left: 16px;
+  
 }

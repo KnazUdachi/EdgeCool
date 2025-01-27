@@ -11,6 +11,12 @@
     margin-right: auto;
     padding-left: 34px;
   }
+  .title{
+    height: 56px;
+    background: linear-gradient(90deg, #f8f8f8, #ffffff);
+    border-top: 1px solid #D9FFF5;
+  margin-bottom: 24px;
+  }
   .container {
     width: 100%;
     max-width: 1120px;
@@ -162,6 +168,11 @@
     }
   }
   @media (min-width: 320px) and (max-width: 767px) {
+    .title{
+      height: 80px;
+      background: linear-gradient(90deg, #f8f8f8, #ffffff);
+      border-top: 1px solid #D9FFF5;
+    }
     .product-logos__wrppaer {
       flex-wrap: nowrap;
     }

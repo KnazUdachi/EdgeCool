@@ -1,0 +1,101 @@
+.prices {
+  &__wrapper {
+    background-color: white;
+    width: 260px !important;
+    height: 200px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  &__info {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__info:first-of-type .prices__description {
+    height: 36px;
+  }
+
+  &__info::last-of-type {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    color: #7e7e82;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 4px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 18px;
+    color: #1b1c21;
+    max-width: 200px;
+    font-family: TT Lakes;
+    letter-spacing: 0.20000000298023224px;
+  }
+
+  &__btn {
+    width: 119px;
+    height: 32px;
+    background-color: #ff3e79;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 17px; /* Отступ справа для изображения */
+    color: white;
+    font-size: 12px;
+    line-height: 24px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-weight: 500;
+  }
+  &__btn::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    width: 7px;
+    height: 10px;
+    background-image: url('../img/dropdown.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 22px;
+    width: 288px;
+  }
+
+  &__offer {
+    width: 202px;
+    font-size: 16px;
+    margin-left: 16px;
+    color:#1B1C21;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+  }
+  &__offer::after {
+    content: '';
+    width: 8px;
+    height: 12px;
+    background-image:url('../img/Line.svg');
+    position:absolute;
+    left: 113px;
+    bottom: 4px;
+  }
+}
