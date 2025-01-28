@@ -8,21 +8,9 @@
 @import './prices.scss';
 @import './footer.scss';
 
-// @font-face {
-//   font-family: 'Comic';
-//   src: url('../fonts/comic.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: italic;
-// }
 
-// body {
-//   // padding: 1rem;
-//   margin: 0;
-//   // font-family: Comic, sans-serif;
-//   background-color: $bgColor;
-//   color: $text;
-//   background-color: red;
-// }
+
+
 
 *,
 *::before,
@@ -43,7 +31,7 @@ body {
   background-color: $background-color;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+ 
  
 }
 
@@ -64,6 +52,7 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+  
 }
 
 /* Стили для изображений */

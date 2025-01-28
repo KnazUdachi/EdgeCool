@@ -72,20 +72,72 @@ button.addEventListener("click", function () {
   button.classList.toggle("button-close");
 });
 
-
-console.log('хуячим')
-
+// ОТКРЫВАЮЩЕЕСЯ МЕНЮ
 const hamburgerButton = document.querySelector('.header__menu-btn')
 const menu = document.querySelector(".side");
 const sideMenu = document.querySelector(".side__menu-btn")
 const body = document.body;
+console.log(body);
 
 hamburgerButton.addEventListener("click", function() {
   menu.classList.add('menu-open');
-  body.style.overflow = 'hidden'; 
+  body.style.overflow = 'hidden';
+  console.log(body);
 })
 
 sideMenu.addEventListener("click", function(){
   menu.classList.remove('menu-open');
   body.style.overflow = '';
 })
+// ОТКРЫВАЮЩЕЕСЯ ОКНО ОБРАТНОЙ СВЯЗИ
+const feedbackButton = document.querySelector('.side__contact-section-btn.side__contact-section-btn--chat')
+const feedback = document.querySelector(".feedback");
+const feedbackClose = document.querySelector(".feedback__btn")
+
+feedbackButton.addEventListener("click", function() {
+  feedback.classList.add('feedback-open');
+  body.style.overflow = 'hidden'; 
+  console.log(body);
+})
+
+feedbackClose.addEventListener("click", function(){
+  feedback.classList.remove('feedback-open');
+})
+
+// const hamburgerButton = document.querySelector('.header__menu-btn');
+// const menu = document.querySelector('.side');
+// const sideMenu = document.querySelector('.side__menu-btn');
+// const body = document.body;
+// const feedbackButton = document.querySelector('.side__contact-section-btn');
+// const feedback = document.querySelector('.feedback');
+// const feedbackClose = document.querySelector('.feedback__btn');
+
+// const disableScroll = () => {
+//   body.style.overflow = 'hidden';
+//   document.documentElement.style.overflow = 'hidden';
+// };
+
+// const enableScroll = () => {
+//   body.style.overflow = '';
+//   document.documentElement.style.overflow = '';
+// };
+
+// hamburgerButton.addEventListener('click', () => {
+//   menu.classList.add('menu-open');
+//   disableScroll();
+// });
+
+// sideMenu.addEventListener('click', () => {
+//   menu.classList.remove('menu-open');
+//   enableScroll();
+// });
+
+// feedbackButton.addEventListener('click', () => {
+//   feedback.classList.add('feedback-open');
+//   disableScroll();
+// });
+
+// feedbackClose.addEventListener('click', () => {
+//   feedback.classList.remove('feedback-open');
+//   enableScroll();
+// });
