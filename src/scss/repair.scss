@@ -4,13 +4,14 @@
     &__wrapper {
       width: 240px;
       height: 160px;
-      background-color: white;
+      background-color: $secondary-color;
       margin-right: 16px;
       display: flex;
       flex-direction: column;
       position: relative;
       padding: 16px; 
       cursor: pointer;
+      margin-bottom: 16px;
     }
   
     &__text {
@@ -26,25 +27,9 @@
       background-position: center;
       background-repeat: no-repeat;
       position: absolute;
-      bottom: 16px; // Расположение изображения в противоположном углу от текста
-      right: 16px; // Расстояние от правого нижнего угла
-      z-index: 1; // Картинка будет позади текста
+      bottom: 16px; 
+      right: 16px; 
+      z-index: 1; 
     }
   }
 
-// .repair__wrapper{
-//     width: 240px;
-//     height: 160px;
-//     background-color:white;
-//     margin-right: 16px;
-// }
-
-
-// .reair__text{
-//     padding-left: 16px;
-//     padding-top: 16px;
-// }
-
-// .repair__wrapper{
-//     display: flex;
-// }

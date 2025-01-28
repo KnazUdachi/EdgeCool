@@ -74,3 +74,15 @@ button.addEventListener("click", function () {
 
 
 console.log('хуячим')
+
+const hamburgerButton = document.querySelector('.header__menu-btn')
+const menu = document.querySelector(".side");
+const sideMenu = document.querySelector(".side__menu-btn")
+
+hamburgerButton.addEventListener("click", function() {
+  menu.classList.add('menu-open')
+})
+
+sideMenu.addEventListener("click", function(){
+  menu.classList.remove('menu-open')
+})

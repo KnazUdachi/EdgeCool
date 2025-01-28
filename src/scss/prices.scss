@@ -1,6 +1,6 @@
 .prices {
   &__wrapper {
-    background-color: white;
+    background-color: $secondary-color;
     width: 260px !important;
     height: 200px;
     margin-right: 16px;
@@ -25,7 +25,7 @@
   }
 
   &__subtitle {
-    color: #7e7e82;
+    color: $heading-color;
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 4px;
@@ -34,23 +34,23 @@
   &__description {
     font-size: 14px;
     line-height: 18px;
-    color: #1b1c21;
+    color: $text-color;
     max-width: 200px;
-    font-family: TT Lakes;
+    font-family: 'TT Lakes';
     letter-spacing: 0.20000000298023224px;
   }
 
   &__btn {
     width: 119px;
     height: 32px;
-    background-color: #ff3e79;
+    background-color: $primary-color;
     border: none;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-right: 17px; /* Отступ справа для изображения */
-    color: white;
+    color: $secondary-color;
     font-size: 12px;
     line-height: 24px;
     position: absolute;
@@ -84,7 +84,7 @@
     width: 202px;
     font-size: 16px;
     margin-left: 16px;
-    color:#1B1C21;
+    color:$text-color;
     font-weight: 500;
     display: flex;
     position: relative;

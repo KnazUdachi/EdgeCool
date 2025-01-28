@@ -1,3 +1,5 @@
+@import './colors.scss';
+@import './side.scss';
 @import '../fonts/stylesheet.css';
 @import './header.scss';
 @import './logos.scss';
@@ -37,7 +39,7 @@ html {
 /* Общие стили для body */
 body {
   font-family: 'TT Lakes', sans-serif;
-  background-color: #f8f8f8;
+  background-color: $background-color;
   margin-left: auto;
   margin-right: auto;
  
@@ -101,8 +103,8 @@ dd {
 
 .title{
   height: 56px;
-  background: linear-gradient(90deg, #f8f8f8, #ffffff);
-  border-top: 1px solid #D9FFF5;
+  background: linear-gradient(90deg, $background-color, $secondary-color);
+  border-top: 1px solid $border-color;
   margin-bottom: 24px;
 
 }
@@ -123,7 +125,7 @@ h2{
     text-decoration-skip-ink: none;
     font-weight: 500;
     text-transform: uppercase;
-    color: #7e7e82;
+    color: $heading-color;
     padding-top: 16px;
     margin-left: 16px;
   
