@@ -12,7 +12,7 @@ module.exports = {
   // Выходной файл
   output: {
     filename: './js/bundle.js',
-    publicPath: '/EdgeCool//'
+
   },
 
   // Source maps для удобства отладки
