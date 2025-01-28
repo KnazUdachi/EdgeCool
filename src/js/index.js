@@ -87,5 +87,5 @@ hamburgerButton.addEventListener("click", function() {
 
 sideMenu.addEventListener("click", function(){
   menu.classList.remove('menu-open');
-  body.style.overflow = 'hidden';
+  body.style.overflow = '';
 })
