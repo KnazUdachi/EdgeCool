@@ -19,118 +19,6 @@
     font-style: normal;
   }
 @charset "UTF-8";
-.side {
-  background-color: #ffffff;
-  position: absolute;
-  left: -100%;
-  top: 0;
-  transition: left 0.3s ease;
-  height: 100vh;
-  z-index: 100000; }
-  .side__container {
-    width: 320px; }
-  .side__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 88px; }
-  .side__menu {
-    display: flex;
-    align-items: center;
-    margin-left: 16px; }
-  .side__menu-btn {
-    background-image: url(./static/burger__close.png);
-    width: 40px;
-    height: 40px;
-    margin-right: 16px;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .side__logo-img {
-    max-width: 95px; }
-  .side__actions {
-    display: flex;
-    margin-right: 24px; }
-  .side__search-btn {
-    background-image: url(./static/search.png);
-    width: 40px;
-    height: 40px; }
-  .side__navigation-list {
-    display: flex;
-    flex-direction: column;
-    margin-left: 24px;
-    padding-top: 22px;
-    font-family: 'TT Lakes', sans-serif;
-    font-size: 16px;
-    line-height: 24px; }
-  .side__navigation-item {
-    margin-left: 16px;
-    margin-bottom: 24px;
-    position: relative;
-    transition: color 0.5s ease; }
-    .side__navigation-item:last-child {
-      margin-bottom: 32px; }
-    .side__navigation-item:hover .side__navigation-link {
-      color: #7E7E82; }
-    .side__navigation-item::before {
-      position: absolute;
-      content: "";
-      width: 4px;
-      height: 32px;
-      background: #41F6D7;
-      left: -16px;
-      top: 50%;
-      transform: translateY(-50%);
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px; }
-    .side__navigation-item:hover::before {
-      opacity: 1; }
-  .side__navigation-link {
-    text-decoration: none;
-    color: inherit; }
-  .side__contact-section-buttons {
-    display: flex;
-    margin-left: 24px;
-    margin-bottom: 16px; }
-  .side__contact-section-btn {
-    width: 40px;
-    height: 40px;
-    margin-right: 16px;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .side__contact-section-btn--call {
-    background-image: url(./static/call.png); }
-  .side__contact-section-btn--chat {
-    background-image: url(./static/chat.png); }
-  .side__contact-section-btn--profile {
-    background-image: url(./static/profile.png); }
-  .side__contact-section-info {
-    display: flex;
-    flex-direction: column; }
-  .side__contact-section-email, .side__contact-section-phone {
-    margin-left: 24px;
-    margin-bottom: 12px;
-    font-weight: 500; }
-  .side__contact-section-phone {
-    font-weight: 600;
-    margin-bottom: 8px; }
-  .side__contact-section-languages {
-    display: flex;
-    margin-left: 24px;
-    padding-bottom: 32px; }
-  .side__contact-section-lang-btn {
-    margin-right: 7px;
-    font-weight: 600;
-    color: #000;
-    transition: color 0.5s ease, text-shadow 0.5s ease; }
-    .side__contact-section-lang-btn:hover {
-      color: #7E7E82;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
-
-.menu-open {
-  left: 0; }
-
 .feedback {
   max-width: 320px;
   background-color: #ffffff;
@@ -251,6 +139,118 @@
 
 .feedback-open {
   right: 0; }
+
+.side {
+  background-color: #ffffff;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  transition: left 0.3s ease;
+  height: 100vh;
+  z-index: 100000; }
+  .side__container {
+    width: 320px; }
+  .side__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px; }
+  .side__menu {
+    display: flex;
+    align-items: center;
+    margin-left: 16px; }
+  .side__menu-btn {
+    background-image: url(./static/burger__close.png);
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .side__logo-img {
+    max-width: 95px; }
+  .side__actions {
+    display: flex;
+    margin-right: 24px; }
+  .side__search-btn {
+    background-image: url(./static/search.png);
+    width: 40px;
+    height: 40px; }
+  .side__navigation-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    padding-top: 22px;
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    line-height: 24px; }
+  .side__navigation-item {
+    margin-left: 16px;
+    margin-bottom: 24px;
+    position: relative;
+    transition: color 0.5s ease; }
+    .side__navigation-item:last-child {
+      margin-bottom: 32px; }
+    .side__navigation-item:hover .side__navigation-link {
+      color: #7E7E82; }
+    .side__navigation-item::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 32px;
+      background: #41F6D7;
+      left: -16px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px; }
+    .side__navigation-item:hover::before {
+      opacity: 1; }
+  .side__navigation-link {
+    text-decoration: none;
+    color: inherit; }
+  .side__contact-section-buttons {
+    display: flex;
+    margin-left: 24px;
+    margin-bottom: 16px; }
+  .side__contact-section-btn {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .side__contact-section-btn--call {
+    background-image: url(./static/call.png); }
+  .side__contact-section-btn--chat {
+    background-image: url(./static/chat.png); }
+  .side__contact-section-btn--profile {
+    background-image: url(./static/profile.png); }
+  .side__contact-section-info {
+    display: flex;
+    flex-direction: column; }
+  .side__contact-section-email, .side__contact-section-phone {
+    margin-left: 24px;
+    margin-bottom: 12px;
+    font-weight: 500; }
+  .side__contact-section-phone {
+    font-weight: 600;
+    margin-bottom: 8px; }
+  .side__contact-section-languages {
+    display: flex;
+    margin-left: 24px;
+    padding-bottom: 32px; }
+  .side__contact-section-lang-btn {
+    margin-right: 7px;
+    font-weight: 600;
+    color: #000;
+    transition: color 0.5s ease, text-shadow 0.5s ease; }
+    .side__contact-section-lang-btn:hover {
+      color: #7E7E82;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+
+.menu-open {
+  left: 0; }
 
 .container {
   min-width: 320px; }
@@ -939,16 +939,15 @@ img[src="img/sonic.png"] {
 
 /* Устанавливаем box-sizing для html */
 html {
-  box-sizing: border-box;
-  height: 100%; }
+  box-sizing: border-box; }
 
 /* Общие стили для body */
+тзь
 body {
   font-family: 'TT Lakes', sans-serif;
   background-color: #F8F8F8;
   margin-left: auto;
-  margin-right: auto;
-  height: 100%; }
+  margin-right: auto; }
 
 /* Стили для ссылок */
 a {
