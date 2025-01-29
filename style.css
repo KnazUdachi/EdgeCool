@@ -484,6 +484,10 @@
     position: absolute;
     top: 6px;
     left: -20px; }
+  .main__title {
+    margin-left: 24px; }
+  .main__nav {
+    margin-left: 24px; }
   .main__section {
     display: flex; }
   .main__text-button {
@@ -765,7 +769,11 @@ img[src="img/sonic.png"] {
   .product__text {
     max-width: 768px; }
   .swiper-slide {
-    width: 224px !important; } }
+    width: 224px !important; }
+  .product-logos__wrppaer {
+    margin-left: 24px; }
+  .button-open {
+    left: -10px; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .title {
@@ -819,6 +827,12 @@ img[src="img/sonic.png"] {
   .swiper-pagination-bullet {
     background-color: #dddddd; } }
 
+@media (min-width: 768px) {
+  .repair__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px; } }
+
 .repair__wrapper {
   width: 240px;
   height: 160px;
@@ -829,7 +843,18 @@ img[src="img/sonic.png"] {
   position: relative;
   padding: 16px;
   cursor: pointer;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  display: none; }
+  @media (min-width: 768px) {
+    .repair__wrapper:nth-child(-n+3) {
+      display: flex; }
+    .repair__wrapper {
+      margin-right: 24px; } }
+  @media (min-width: 1024px) {
+    .repair__wrapper:nth-child(-n+4) {
+      display: flex; } }
+  .repair__wrapper.visible {
+    display: flex; }
 
 .repair__text {
   z-index: 2; }
@@ -846,6 +871,34 @@ img[src="img/sonic.png"] {
   bottom: 16px;
   right: 16px;
   z-index: 1; }
+
+.repair__button {
+  display: none;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  font-weight: 500;
+  font-family: "TT Lakes", sans-serif;
+  margin-left: -10px;
+  margin-bottom: 32px; }
+  @media (min-width: 768px) {
+    .repair__button {
+      display: flex; }
+      .repair__button::before {
+        display: block;
+        content: "";
+        position: relative;
+        background-image: url(./static/icon.png);
+        width: 7px;
+        height: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 39px;
+        margin-right: 16px;
+        top: 8px; }
+      .repair__button.expanded::before {
+        transform: rotate(180deg); } }
 
 .prices__wrapper {
   background-color: #ffffff;
@@ -1177,6 +1230,9 @@ h2 {
   text-transform: uppercase;
   color: #7E7E82;
   margin-left: 16px; }
+  @media (min-width: 768px) {
+    h2 {
+      margin-left: 24px; } }
 
 .no-scroll {
   overflow: hidden; }
