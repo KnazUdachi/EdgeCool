@@ -7,6 +7,7 @@
 @import './repair.scss';
 @import './prices.scss';
 @import './footer.scss';
+@import './call.scss';
 
 
 
@@ -97,7 +98,8 @@ dd {
   background: linear-gradient(90deg, $background-color, $secondary-color);
   border-top: 1px solid $border-color;
   margin-bottom: 24px;
-
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -111,13 +113,12 @@ h2{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.20000000298023224px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     font-weight: 500;
     text-transform: uppercase;
     color: $heading-color;
-    padding-top: 16px;
     margin-left: 16px;
   
+}
+.no-scroll {
+  overflow: hidden;
 }

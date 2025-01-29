@@ -1,12 +1,23 @@
 .feedback{
-  max-width: 320px;
-  background-color:$secondary-color;
+  // max-width: 320px;
+  background-color: $lining-color;
   position: absolute;
   right: -100%;
   top:0;
   transition: right 0.3s ease;
   height: 100%;
   z-index: 100000;
+  display: none;
+  width: 100%;
+
+&__lining{
+  position: absolute;  
+  background-color:$secondary-color;
+    width: 320px;
+    height: 100%;
+    box-shadow: 0px 10px 52px 10px $shadow-color;
+    right: 0;
+  }
 
 &__btn{
   width: 40px;
@@ -130,5 +141,8 @@
 }
 
 .feedback-open{
+  display: block;
+}
+.feedback-anim{
   right: 0;
 }
