@@ -62,6 +62,19 @@ button.addEventListener('click', function () {
   button.classList.toggle('button-close')
 })
 
+
+  const toggleButton = document.querySelector(".repair__button");
+  const repairItems = document.querySelectorAll(".repair__wrapper:nth-child(n+4)"); 
+
+  toggleButton.addEventListener("click", function () {
+    const isExpanded = toggleButton.textContent === "Показать все";
+
+    repairItems.forEach((item) => item.classList.toggle("visible", isExpanded));
+    toggleButton.textContent = isExpanded ? "Скрыть" : "Показать все";
+    toggleButton.classList.toggle("expanded", isExpanded);
+  });
+
+
 // ОТКРЫВАЮЩЕЕСЯ МЕНЮ
 const hamburgerButton = document.querySelector('.header__menu-btn')
 const menu = document.querySelector('.side')
