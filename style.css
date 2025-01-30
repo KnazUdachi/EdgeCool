@@ -32,16 +32,21 @@
   @media (min-width: 360px) {
     .side {
       width: 100%; } }
+  @media (min-width: 1366px) {
+    .side {
+      width: 320px;
+      left: 0;
+      position: static;
+      box-shadow: none; } }
   .side__lining {
     background-color: #ffffff;
     width: 320px;
     height: 100%;
     box-shadow: 16px 0px 52px 0px #0E185033; }
-  .side__container {
-    width: 320px; }
-    @media (min-width: 360px) {
-      .side__container {
-        width: 320px; } }
+    @media (min-width: 1366px) {
+      .side__lining {
+        box-shadow: none;
+        height: 1850px; } }
   .side__wrapper {
     display: flex;
     justify-content: space-between;
@@ -75,13 +80,16 @@
     font-family: 'TT Lakes', sans-serif;
     font-size: 16px;
     line-height: 24px; }
+    @media (min-width: 768px) {
+      .side__navigation-list {
+        margin-bottom: 268px; } }
   .side__navigation-item {
     margin-left: 16px;
     margin-bottom: 24px;
     position: relative;
     transition: color 0.5s ease; }
     .side__navigation-item:last-child {
-      margin-bottom: 32px; }
+      margin-bottom: 268px; }
     .side__navigation-item:hover .side__navigation-link {
       color: #7E7E82; }
     .side__navigation-item::before {
@@ -276,9 +284,6 @@
 .feedback-anim {
   right: 0; }
 
-.container {
-  min-width: 320px; }
-
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -424,8 +429,6 @@
 @media (min-width: 768px) {
   .header {
     background-color: white; }
-  .container {
-    min-width: 768px; }
   .tablet-only {
     display: block; }
   .desctop-only {
@@ -511,11 +514,11 @@
   .main__button::before {
     margin-left: 33px; } }
 
-@media (min-width: 1120px) {
-  .container {
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto; }
+@media (min-width: 1366px) {
+  .header {
+    display: none; } }
+
+@media (min-width: 1440px) {
   .desctop-only {
     display: block; }
   .tablet-only {
@@ -633,11 +636,6 @@
   margin-right: auto;
   padding-left: 34px; }
 
-.container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto; }
-
 .product-logos__wrppaer {
   display: flex;
   margin-left: 32px;
@@ -663,7 +661,6 @@ img[src="img/sonic.png"] {
   height: 21px; }
 
 .product-logos__inner {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -754,22 +751,25 @@ img[src="img/sonic.png"] {
 .swiper-wrapper {
   display: flex; }
 
-.swiper-slide {
-  width: 240px !important; }
+.product-logos__link {
+  width: 240px; }
 
-@media (min-width: 768px) and (max-width: 1119px) {
-  .container {
-    width: 768px;
-    margin: 0 auto; }
+@media (min-width: 1366px) and (max-width: 1439px) {
+  .product-logos__link {
+    width: 224px; }
+  .desctop__table {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 1365px) {
   .desctop__table {
     display: none; }
   .product-logos__link {
-    width: 220px;
+    width: 224px;
     margin-right: 24px; }
   .product__text {
     max-width: 768px; }
-  .swiper-slide {
-    width: 224px !important; }
+  .product-logos__inner {
+    width: 224px; }
   .product-logos__wrppaer {
     margin-left: 24px; }
   .button-open {
@@ -782,8 +782,8 @@ img[src="img/sonic.png"] {
     border-top: 1px solid #D9FFF5; }
   .product-logos__wrppaer {
     flex-wrap: nowrap; }
-  .swiper-slide {
-    width: 240px !important; }
+  .product-logos__inner {
+    width: 240px; }
   .button-open,
   .button-close {
     display: none; }
@@ -843,16 +843,20 @@ img[src="img/sonic.png"] {
   position: relative;
   padding: 16px;
   cursor: pointer;
-  margin-bottom: 16px;
-  display: none; }
+  margin-bottom: 16px; }
   @media (min-width: 768px) {
-    .repair__wrapper:nth-child(-n+3) {
-      display: flex; }
     .repair__wrapper {
-      margin-right: 24px; } }
-  @media (min-width: 1024px) {
-    .repair__wrapper:nth-child(-n+4) {
-      display: flex; } }
+      width: 224px;
+      display: none; }
+      .repair__wrapper:nth-child(-n+3) {
+        display: flex; }
+      .repair__wrapper {
+        margin-right: 24px; } }
+  @media (min-width: 1440px) {
+    .repair__wrapper {
+      width: 240px; }
+      .repair__wrapper:nth-child(-n+4) {
+        display: flex; } }
   .repair__wrapper.visible {
     display: flex; }
 
@@ -900,23 +904,66 @@ img[src="img/sonic.png"] {
       .repair__button.expanded::before {
         transform: rotate(180deg); } }
 
+@media (min-width: 768px) {
+  .prices__box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    margin-left: 24px;
+    background-color: #ffffff;
+    max-width: 720px;
+    border-radius: 6px; } }
+
 .prices__wrapper {
   background-color: #ffffff;
-  width: 260px !important;
+  width: 260px;
   height: 200px;
-  margin-right: 16px;
   margin-bottom: 16px;
-  margin-left: 8px;
   position: relative;
-  border-radius: 6px; }
+  border-radius: 6px;
+  margin-right: 16px; }
+  @media (min-width: 768px) {
+    .prices__wrapper {
+      display: flex;
+      min-width: 720px;
+      flex-grow: 1;
+      height: 65px;
+      margin-bottom: 0;
+      justify-content: space-between;
+      position: relative; }
+      .prices__wrapper:not(:last-of-type)::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 688px;
+        height: 1px;
+        background-color: #eaeaea;
+        margin-left: 16px; }
+      .prices__wrapper > :nth-child(1) {
+        min-width: 350px; }
+      .prices__wrapper > :nth-child(2) {
+        min-width: 74px; }
+      .prices__wrapper > :nth-child(3) {
+        min-width: 81px; } }
 
 .prices__info {
   margin-top: 16px;
   margin-left: 16px;
   margin-bottom: 16px; }
+  @media (min-width: 768px) {
+    .prices__info {
+      margin-top: 23px;
+      margin-bottom: 23px;
+      height: 18px;
+      margin-left: 0; } }
 
 .prices__info:first-of-type .prices__description {
   height: 36px; }
+  @media (min-width: 768px) {
+    .prices__info:first-of-type .prices__description {
+      height: 18px;
+      margin-left: 16px;
+      min-width: 348px; } }
 
 .prices__info::last-of-type {
   margin-bottom: 20px; }
@@ -926,14 +973,20 @@ img[src="img/sonic.png"] {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 4px; }
+  @media (min-width: 768px) {
+    .prices__subtitle {
+      display: none; } }
 
 .prices__description {
   font-size: 14px;
-  line-height: 18px;
   color: #1B1C21;
   max-width: 200px;
   font-family: 'TT Lakes';
   letter-spacing: 0.20000000298023224px; }
+  @media (min-width: 768px) {
+    .prices__description {
+      max-width: 350px;
+      height: 18px; } }
 
 .prices__btn {
   width: 119px;
@@ -953,11 +1006,16 @@ img[src="img/sonic.png"] {
   right: 16px;
   bottom: 16px;
   font-weight: 500; }
+  @media (min-width: 768px) {
+    .prices__btn {
+      position: static;
+      margin-right: 16px;
+      margin-top: 16px; } }
 
 .prices__btn::after {
   content: '';
   position: absolute;
-  right: 10px;
+  right: 30px;
   width: 7px;
   height: 10px;
   background-image: url(./static/dropdown.svg);
@@ -966,6 +1024,9 @@ img[src="img/sonic.png"] {
 
 .prices__additional {
   max-width: 421px; }
+  @media (min-width: 768px) {
+    .prices__additional {
+      margin-left: 24px; } }
 
 .prices__text {
   font-size: 14px;
@@ -977,6 +1038,10 @@ img[src="img/sonic.png"] {
   margin-bottom: 22px;
   min-width: 288px;
   margin-right: 16px; }
+  @media (min-width: 768px) {
+    .prices__text {
+      margin-left: 0;
+      margin-right: 0; } }
 
 .prices__offer {
   width: 202px;
@@ -985,7 +1050,13 @@ img[src="img/sonic.png"] {
   color: #1B1C21;
   font-weight: 500;
   display: flex;
-  position: relative; }
+  position: relative;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .prices__offer {
+      margin-left: 0;
+      margin-right: 0;
+      width: 300px; } }
 
 .prices__offer::after {
   content: '';
@@ -993,14 +1064,22 @@ img[src="img/sonic.png"] {
   height: 12px;
   background-image: url(./static/Line.svg);
   position: absolute;
-  left: 113px;
+  left: 304px;
   bottom: 4px; }
 
 .footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #D9FFF5; }
+  border-top: 1px solid #D9FFF5;
+  align-items: flex-start;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .footer__wrapper {
+      flex-direction: row;
+      width: 720px;
+      margin-left: 24px;
+      padding-top: 32px; } }
 
 .footer__info {
   white-space: pre-line;
@@ -1009,9 +1088,21 @@ img[src="img/sonic.png"] {
   height: auto;
   color: #7E7E82;
   margin-bottom: 16px; }
+  @media (min-width: 768px) {
+    .footer__info {
+      flex: 1;
+      margin: 0; } }
 
 .footer__info:first-child {
   margin-top: 16px; }
+  @media (min-width: 768px) {
+    .footer__info:first-child {
+      margin-top: 0;
+      text-align: left; } }
+
+@media (min-width: 768px) {
+  .footer__info:last-child {
+    text-align: right; } }
 
 .call {
   background-color: rgba(255, 255, 255, 0.95);
@@ -1152,51 +1243,44 @@ img[src="img/sonic.png"] {
   padding: 0;
   box-sizing: border-box; }
 
-/* Устанавливаем box-sizing для html */
 html {
   box-sizing: border-box; }
 
-/* Общие стили для body */
 body {
   font-family: 'TT Lakes', sans-serif;
   background-color: #F8F8F8;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  display: flex;
+  justify-content: center; }
 
-/* Стили для ссылок */
 a {
   text-decoration: none;
   color: inherit; }
 
-/* Убираем маркеры у списков */
 ul, ol {
   list-style: none; }
 
-/* Стили для кнопок */
 button {
   background: none;
   border: none;
   padding: 0;
   margin: 0; }
 
-/* Стили для изображений */
 img {
   max-width: 100%;
   display: block; }
 
-/* Сброс отступов для списков с классами */
 ul[class],
 ol[class] {
   padding: 0; }
 
-/* Дополнительные стили для input, textarea, select и button */
 input,
 button,
 textarea,
 select {
   font: inherit; }
 
-/* Стили для блоков с отступами и margin */
 h1, h2, h3, h4, h5, h6,
 p,
 ul[class],
@@ -1236,6 +1320,17 @@ h2 {
 
 .no-scroll {
   overflow: hidden; }
+
+.container {
+  width: 320px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 768px;
+      margin: 0; } }
+  @media (min-width: 1444px) {
+    .container {
+      width: 1120px; } }
 
 
 /*# sourceMappingURL=style.css.map*/
