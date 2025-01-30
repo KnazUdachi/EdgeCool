@@ -1,4 +1,12 @@
 .prices {
+
+  &__box{
+    @media(min-width: 768px){
+  display: flex;
+  flex-direction: column;
+    }
+  }
+
   &__wrapper {
     background-color: $secondary-color;
     width: 260px !important;
@@ -8,6 +16,10 @@
     margin-left: 8px;
     position: relative;
     border-radius: 6px;
+    @media(min-width: 768px){
+      display: flex;
+      width: 720px !important;
+    }
   }
 
   &__info {

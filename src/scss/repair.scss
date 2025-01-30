@@ -10,6 +10,7 @@
   }
 
   &__wrapper {
+
     width: 240px;
     height: 160px;
     background-color: $secondary-color;
@@ -20,8 +21,13 @@
     padding: 16px;
     cursor: pointer;
     margin-bottom: 16px;
-    display: none; // По умолчанию скрываем
 
+    @media(min-width: 768px){
+
+    
+   
+    display: none; // По умолчанию скрываем
+  }
     @media (min-width: 768px) {
       &:nth-child(-n+3) {
         display: flex; 
