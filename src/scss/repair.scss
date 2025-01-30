@@ -22,13 +22,12 @@
     cursor: pointer;
     margin-bottom: 16px;
 
-    @media(min-width: 768px){
-
     
+    @media (min-width: 768px) {
+      
+    width: 224px;
    
     display: none; // По умолчанию скрываем
-  }
-    @media (min-width: 768px) {
       &:nth-child(-n+3) {
         display: flex; 
       }
@@ -37,7 +36,8 @@
       }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1440px) {
+      width: 240px;
       &:nth-child(-n+4) {
         display: flex; 
       }

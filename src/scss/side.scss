@@ -15,23 +15,26 @@
     
 
   }
+@media(min-width:1366px){
+  width: 320px;
+  left: 0;
+  position: static;
+  box-shadow:none;
 
+}
   &__lining{
     background-color:$secondary-color;
     width: 320px;
     height: 100%;
     box-shadow: 16px 0px 52px 0px $shadow-color;
+
+    @media(min-width:1366px){
+      box-shadow:none;
+      height: 1850px;
+    }
   }
   
-  &__container {
-    width: 320px;
-
-    @media (min-width: 360px){
-      width: 320px;
-    }
-    // background-color:$secondary-color;
-  }
-
+  
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -78,6 +81,10 @@
       font-family: 'TT Lakes', sans-serif;
       font-size: 16px;
       line-height: 24px;
+      
+      @media(min-width:768px){
+      margin-bottom: 268px;
+      }
     }
 
     &-item {
@@ -87,7 +94,7 @@
       transition: color 0.5s ease;
 
       &:last-child {
-        margin-bottom: 32px;
+        margin-bottom: 268px;
       }
 
       &:hover .side__navigation-link {
