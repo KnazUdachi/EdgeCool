@@ -149,8 +149,10 @@
     .desctop__table {
       display: none;
     }
+    .product-logos__wrppaer {
+      margin-left: 24px;
   }
-  
+}
   @media (min-width: 768px) and (max-width: 1365px) {
 
     .desctop__table {
@@ -169,6 +171,7 @@
 }
     .product-logos__wrppaer{
       margin-left: 24px;
+      max-width: 1120px;
     }
     .button-open{
       left: -10px;

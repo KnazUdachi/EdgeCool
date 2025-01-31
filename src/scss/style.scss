@@ -131,15 +131,20 @@ h2{
 }
 
 .container{
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 
   @media(min-width:768px){
-    width: 768px;
+    max-width: 1120px;
     margin: 0;
   }
   @media(min-width:1444px){
     width: 1120px;
   }
   
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
 }

@@ -121,6 +121,7 @@ const feedbackHeaderTablet = document.querySelector('.header__btn-chat')
 
 feedbackButton.addEventListener('click', function () {
   feedback.classList.add('feedback-open')
+  body.classList.add('no-scroll');
   setTimeout(() => {
     feedback.classList.add('feedback-anim')
   }, 10)
@@ -171,6 +172,7 @@ const callHeaderTablet = document.querySelector('.header__btn-call')
 
 callButton.addEventListener('click', function () {
   call.classList.add('call-open')
+  body.classList.add('no-scroll');
   setTimeout(() => {
     call.classList.add('call-anim')
   }, 10)

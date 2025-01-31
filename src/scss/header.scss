@@ -288,6 +288,9 @@
     .header{
       display: none;
     }
+    .main__title::before {
+      left: -24px;
+  }
 
   }
 
