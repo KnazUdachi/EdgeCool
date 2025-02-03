@@ -15,12 +15,13 @@
  
    
   }
+  @media(min-width: 1440px){
+    width: 1056px; 
+  }
 }
 
 
-@media(min-width: 1440px){
-  max-width: 1056px;
-}
+
 
 
   &__wrapper {
@@ -56,7 +57,7 @@
 
 
         @media(min-width:1440px){
-          width: 1008px;
+          width: 1009px;
         }
       }
 
@@ -146,6 +147,7 @@
     right: 16px;
     bottom: 16px;
     font-weight: 500;
+    cursor: pointer;
 
     @media(min-width: 768px){
       position: static;

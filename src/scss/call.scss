@@ -66,9 +66,9 @@
       margin-bottom: 16px;
       
       &:focus {
-        border-color: $heading-color;  // Меняет цвет границы
-        outline: none;  // Убирает стандартное обводку браузера (если нужно)
-        box-shadow: 0 0 5px $heading-color;  // Добавляет тень при фокусе
+        border-color: $heading-color;  
+        outline: none;  
+        box-shadow: 0 0 5px $heading-color;  
       }
       
   
@@ -88,9 +88,9 @@
       margin-bottom: 16px;
      
       &:focus {
-        border-color: $heading-color;  // Меняет цвет границы
-        outline: none;  // Убирает стандартное обводку браузера (если нужно)
-        box-shadow: 0 0 5px $heading-color;  // Добавляет тень при фокусе
+        border-color: $heading-color;  
+        outline: none;  
+        box-shadow: 0 0 5px $heading-color;  
       }
      
      &::placeholder{
