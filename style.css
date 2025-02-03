@@ -763,22 +763,32 @@ img[src="img/sonic.png"] {
 
 @media (min-width: 1366px) and (max-width: 1439px) {
   .product-logos__link {
-    width: 224px; }
-  .desctop__table {
-    display: none; }
+    width: 224px;
+    margin-right: 24px; }
   .product-logos__wrppaer {
     margin-left: 24px; } }
 
-@media (min-width: 768px) and (max-width: 1365px) {
-  .desctop__table {
-    display: none; }
+@media (min-width: 1000px) and (max-width: 1120px) {
+  .product-logos__link {
+    width: 243px;
+    margin-right: 32px; }
+  .product-logos__inner {
+    width: 243px; } }
+
+@media (min-width: 768px) and (max-width: 1000px) {
   .product-logos__link {
     width: 224px;
     margin-right: 24px; }
+  .product-logos__inner {
+    width: 224px; } }
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .desctop__table {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 1365px) {
   .product__text {
     max-width: 768px; }
-  .product-logos__inner {
-    width: 224px; }
   .product-logos__wrppaer {
     margin-left: 24px;
     max-width: 1120px; }
@@ -862,11 +872,20 @@ img[src="img/sonic.png"] {
         display: flex; }
       .repair__wrapper {
         margin-right: 24px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1120px) {
     .repair__wrapper {
-      width: 240px; }
+      width: 240px;
+      margin-right: 32px; }
       .repair__wrapper:nth-child(-n+4) {
         display: flex; } }
+  @media (min-width: 1366px) {
+    .repair__wrapper {
+      width: 224px;
+      margin-right: 24px; } }
+  @media (min-width: 1440px) {
+    .repair__wrapper {
+      width: 240px;
+      margin-right: 32px; } }
   .repair__wrapper.visible {
     display: flex; }
 
@@ -925,8 +944,8 @@ img[src="img/sonic.png"] {
     border-radius: 6px; } }
 
 @media (min-width: 1440px) {
-  .prices {
-    max-width: 1056px; } }
+  .prices__box {
+    width: 1056px; } }
 
 .prices__wrapper {
   background-color: #ffffff;
@@ -955,7 +974,7 @@ img[src="img/sonic.png"] {
         margin-left: 16px; } }
     @media (min-width: 768px) and (min-width: 1440px) {
       .prices__wrapper:not(:last-of-type)::after {
-        width: 1008px; } }
+        width: 1009px; } }
   @media (min-width: 768px) {
       .prices__wrapper > :nth-child(1) {
         min-width: 350px; }
@@ -1026,7 +1045,8 @@ img[src="img/sonic.png"] {
   position: absolute;
   right: 16px;
   bottom: 16px;
-  font-weight: 500; }
+  font-weight: 500;
+  cursor: pointer; }
   @media (min-width: 768px) {
     .prices__btn {
       position: static;
