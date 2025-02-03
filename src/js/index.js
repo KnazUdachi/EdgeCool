@@ -1,6 +1,6 @@
 import '../scss/style.scss'
 
-console.log('Works!')
+console.log('Закончили работу')
 
 let swiperInstance
 
@@ -80,7 +80,7 @@ const hamburgerButton = document.querySelector('.header__menu-btn')
 const menu = document.querySelector('.side')
 const sideMenu = document.querySelector('.side__menu-btn')
 const body = document.body
-const sideLining = document.querySelector('.side__lining'); // Элемент, по которому не должно закрываться меню
+const sideLining = document.querySelector('.side__lining'); 
 
 hamburgerButton.addEventListener('click', function () {
   menu.classList.add('menu-open');
@@ -92,19 +92,16 @@ sideMenu.addEventListener('click', function () {
   body.classList.remove('no-scroll');
 });
 
-// Закрытие при клике на фон
+
 menu.addEventListener('click', function (event) {
-  // Проверяем, если клик был именно по самому меню, а не внутри side__lining
+ 
   if (!sideLining.contains(event.target)) {
     menu.classList.remove('menu-open');
     body.classList.remove('no-scroll');
   }
 });
 
-// // Чтобы клики внутри side__lining не закрывали меню
-// sideLining.addEventListener('click', function (event) {
-//   event.stopPropagation(); // Останавливаем всплытие события
-// });
+
 
 
 
