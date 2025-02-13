@@ -198,7 +198,8 @@
     margin-left: 16px;
     font-size: 24px;
     position: relative;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    font-weight: 600; }
   .feedback__form {
     display: flex;
     flex-direction: column;
@@ -1208,7 +1209,8 @@ img[src="img/sonic.png"] {
     margin-left: 16px;
     font-size: 24px;
     position: relative;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    font-weight: 600; }
   .call__form {
     display: flex;
     flex-direction: column;
