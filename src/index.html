@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+
     <title>Услуги и сервисы</title>
   </head>
 
   <body>
+
     <div class="side">
       <div class="side__lining">
       <div class="side__container">
@@ -80,8 +76,11 @@
       </div>
     </div>
   </div>
+
+
+
     <div class="container">
-    <header class="header">
+    <section class="header">
         <div class="header__wrapper">
           <div class="header__menu-logo">
             <button class="header__menu-btn"> </button>
@@ -102,10 +101,10 @@
           </div>
         </div>
       
-    </header>
+    </section>
 
 
-    <main class="main">
+    <section class="main">
         <div class="main__top">
           <h1 class="main__title">Услуги и сервисы</h1>
           <div class="main__btn-inner desctop-only">
@@ -172,9 +171,9 @@
           />
         </div>
       
-    </main>
+    </section>
 
-    <div class="product-logos">
+    <section class="product-logos">
      
         <div class="title title--mobile">
           <h2>Ремонт техники различных брендов</h2>
@@ -294,9 +293,9 @@
         <button class="button-open">Показать все</button>
         <!-- <button class="button-close hidden">Скрыть</button> -->
       
-    </div>
+    </section>
 
-    <div class="repair">
+    <section class="repair">
       
         <div class="title title--mobile">
           <h2> Ремонт различных видов техники </h2>
@@ -307,42 +306,24 @@
           <div class="repair__box swiper-wrapper">
             <!-- Slides -->
              
-            <a class="repair__wrapper swiper-slide"
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide"
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide"
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide "
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide "
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide "
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide "
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide "
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
-            <a class="repair__wrapper swiper-slide "
-              ><div class="repair__text">Ремонт ноутбуков</div></a
-            >
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
+            <a class="repair__wrapper swiper-slide"><p class="repair__text">Ремонт ноутбуков</p></a>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
           <button class="repair__button">Показать все</button>
         </div>
       
-    </div>
+    </section>
 
-    <div class="prices">
+    <section class="prices">
       
         <div class="title">
           <h2> Цены на услуги </h2>
@@ -352,119 +333,118 @@
           <!-- Additional required wrapper -->
           <div class="prices__box swiper-wrapper">
             <!-- Slides -->
-            <a href="" class="prices__wrapper swiper-slide">
+            <div href="" class="prices__wrapper swiper-slide">
               <div class="prices__info">
-                <div class="prices__subtitle">Ремонтные услуги</div>
-                <div class="prices__description">Диагностика</div>
+                <p class="prices__subtitle">Ремонтные услуги</p>
+                <p class="prices__description">Диагностика</p>
               </div>
               <div class="prices__info">
-                <div class="prices__subtitle">Цена</div>
-                <div class="prices__description">Бесплатно</div>
+                <p class="prices__subtitle">Цена</p>
+                <p class="prices__description">Бесплатно</p>
               </div>
               <div class="prices__info">
-                <div class="prices__subtitle">Срок</div>
-                <div class="prices__description">30 мин</div>
-              </div>
-              <button class="prices__btn">ЗАКАЗАТЬ</button>
-            </a>
-            <a href="" class="prices__wrapper swiper-slide">
-              <div class="prices__info">
-                <div class="prices__subtitle">Ремонтные услуги</div>
-                <div class="prices__description">Замена дисплея</div>
-              </div>
-              <div class="prices__info">
-                <div class="prices__subtitle">Цена</div>
-                <div class="prices__description">1 000 ₽</div>
-              </div>
-              <div class="prices__info">
-                <div class="prices__subtitle">Срок</div>
-                <div class="prices__description">30-120 мин</div>
+                <p class="prices__subtitle">Срок</p>
+                <p class="prices__description">30 мин</p>
               </div>
               <button class="prices__btn">ЗАКАЗАТЬ</button>
-            </a>
-            <a href="" class="prices__wrapper swiper-slide">
+            </div>
+            <div href="" class="prices__wrapper swiper-slide">
               <div class="prices__info">
-                <div class="prices__subtitle">Ремонтные услуги</div>
-                <div class="prices__description"
-                  >Замена полифонического динамика</div
+                <p class="prices__subtitle">Ремонтные услуги</p>
+                <p class="prices__description">Замена дисплея</p>
+              </div>
+              <div class="prices__info">
+                <p class="prices__subtitle">Цена</p>
+                <p class="prices__description">1 000 ₽</p>
+              </div>
+              <div class="prices__info">
+                <p class="prices__subtitle">Срок</p>
+                <p class="prices__description">30-120 мин</p>
+              </div>
+              <button class="prices__btn">ЗАКАЗАТЬ</button>
+            </div>
+            <div href="" class="prices__wrapper swiper-slide">
+              <div class="prices__info">
+                <p class="prices__subtitle">Ремонтные услуги</p>
+                <p class="prices__description">Замена полифонического динамика</p>
+              </div>
+              <div class="prices__info">
+                <p class="prices__subtitle">Цена</p>
+                <p class="prices__description">1 000 ₽</p>
+              </div>
+              <div class="prices__info">
+                <p class="prices__subtitle">Срок</p>
+                <p class="prices__description">30-120 мин</p>
+              </div>
+              <button class="prices__btn">ЗАКАЗАТЬ</button>
+            </div>
+            <div href="" class="prices__wrapper swiper-slide">
+              <div class="prices__info">
+                <p class="prices__subtitle">Ремонтные услуги</p>
+                <p class="prices__description"
+                  >Тестирование с выдачей технического заключения</p
                 >
               </div>
               <div class="prices__info">
-                <div class="prices__subtitle">Цена</div>
-                <div class="prices__description">1 000 ₽</div>
+                <p class="prices__subtitle">Цена</p>
+                <p class="prices__description">1 000 ₽</p>
               </div>
               <div class="prices__info">
-                <div class="prices__subtitle">Срок</div>
-                <div class="prices__description">30-120 мин</div>
+                <p class="prices__subtitle">Срок</p>
+                <p class="prices__description">30-120 мин</p>
               </div>
               <button class="prices__btn">ЗАКАЗАТЬ</button>
-            </a>
-            <a href="" class="prices__wrapper swiper-slide">
+            </div>
+            <div href="" class="prices__wrapper swiper-slide">
               <div class="prices__info">
-                <div class="prices__subtitle">Ремонтные услуги</div>
-                <div class="prices__description"
-                  >Тестирование с выдачей технического заключения</div
+                <p class="prices__subtitle">Ремонтные услуги</p>
+                <p class="prices__description"
+                  >Замена программного обеспечения</p
                 >
               </div>
               <div class="prices__info">
-                <div class="prices__subtitle">Цена</div>
-                <div class="prices__description">1 000 ₽</div>
+                <p class="prices__subtitle">Цена</p>
+                <p class="prices__description">1 000 ₽</p>
               </div>
               <div class="prices__info">
-                <div class="prices__subtitle">Срок</div>
-                <div class="prices__description">30-120 мин</div>
+                <p class="prices__subtitle">Срок</p>
+                <p class="prices__description">30-120 мин</p>
               </div>
               <button class="prices__btn">ЗАКАЗАТЬ</button>
-            </a>
-            <a href="" class="prices__wrapper swiper-slide">
-              <div class="prices__info">
-                <div class="prices__subtitle">Ремонтные услуги</div>
-                <div class="prices__description"
-                  >Замена программного обеспечения</div
-                >
-              </div>
-              <div class="prices__info">
-                <div class="prices__subtitle">Цена</div>
-                <div class="prices__description">1 000 ₽</div>
-              </div>
-              <div class="prices__info">
-                <div class="prices__subtitle">Срок</div>
-                <div class="prices__description">30-120 мин</div>
-              </div>
-              <button class="prices__btn">ЗАКАЗАТЬ</button>
-            </a>
+            </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
         <div class="prices__additional">
-          <div class="prices__text">
+          <p class="prices__text">
             Все цены указаны с учетом НДС. Стоимость ремонта указана на
             единичную услугу. Для получения коммерческого предложения на
             постоянное обслуживание, оставьте заявку.
-          </div>
+          </p>
           <a href="" class="prices__offer">
             Получить коммерческое предложение
           </a>
         </div>
       
-    </div>
-
-    <div class="footer">
+        <div class="footer">
     
-        <div class="footer__wrapper">
-          <a href="" class="footer__info">© 2019 CPS 
-          Разработано командой Apesong
-          </a>
-          <a href="" class="footer__info">Политика конфиденциальности</a>
-          <a href="" class="footer__info">Информация, размещенная на данной странице, не является публичной офертой</a>
-        </div>
-     
-    </div>
+          <div class="footer__wrapper">
+            <a href="" class="footer__info">© 2019 CPS 
+            Разработано командой Apesong
+            </a>
+            <a href="" class="footer__info">Политика конфиденциальности</a>
+            <a href="" class="footer__info">Информация, размещенная на данной странице, не является публичной офертой</a>
+          </div>
+       
+      </div>
+  
+      </section>
+
 
 
    
-  <div class="feedback">
+  <section class="feedback">
     <div class="feedback__lining">
     <button class="feedback__btn">
     </button>
@@ -489,10 +469,10 @@
     </form>
 
     </div>
-  </div>
+  </section>
 
 
-  <div class="call">
+  <section class="call">
     <div class="call__lining">
       <button class="call__btn">
       </button>
@@ -508,10 +488,10 @@
     </form>
 
     </div>  
-  </div>
+  </section>
+
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/index.js"></script>
+
   </body>
 </html>
