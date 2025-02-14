@@ -1,0 +1,198 @@
+.side {
+  background-color: $lining-color;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  transition: left 0.3s ease;
+  height: 100vh;
+  width: 100%;
+  z-index: 100000;
+
+  width: 100%;
+  @media (min-width: 360px) {
+    width: 100%;
+  }
+  @media (min-width: 1366px) {
+    width: 320px;
+    left: 0;
+    position: static;
+    box-shadow: none;
+    height: auto;
+  }
+  &__lining {
+    background-color: $secondary-color;
+    width: 320px;
+    min-height: 100%;
+    box-shadow: 16px 0px 52px 0px $shadow-color;
+
+    @media (min-width: 1366px) {
+      box-shadow: none;
+
+      height: 100vh;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  &__menu-btn {
+    background-image: url('../img/burger__close.png');
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__logo-img {
+    max-width: 95px;
+  }
+
+  &__actions {
+    display: flex;
+    margin-right: 24px;
+  }
+
+  &__search-btn {
+    background-image: url('../img/search.png');
+    width: 40px;
+    height: 40px;
+  }
+
+  &__navigation {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      margin-left: 24px;
+      padding-top: 22px;
+      font-family: 'TT Lakes', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 268px;
+      }
+    }
+
+    &-item {
+      margin-left: 16px;
+      margin-bottom: 24px;
+      position: relative;
+      transition: color 0.5s ease;
+
+      &:last-child {
+        margin-bottom: 32px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 268px;
+        }
+      }
+
+      &:hover .side__navigation-link {
+        color: $heading-color;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 4px;
+        height: 32px;
+        background: $title-line;
+        left: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__contact-section {
+    &-buttons {
+      display: flex;
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    &-btn {
+      width: 40px;
+      height: 40px;
+      margin-right: 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &-btn--call {
+      background-image: url('../img/call.png');
+    }
+
+    &-btn--chat {
+      background-image: url('../img/chat.png');
+    }
+
+    &-btn--profile {
+      background-image: url('../img/profile.png');
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-email,
+    &-phone {
+      margin-left: 24px;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    &-phone {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    &-languages {
+      display: flex;
+      margin-left: 24px;
+      padding-bottom: 32px;
+    }
+
+    &-lang-btn {
+      margin-right: 7px;
+      font-weight: 600;
+      color: #000;
+      transition: color 0.5s ease, text-shadow 0.5s ease;
+
+      &:hover {
+        color: $heading-color;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+.menu-open {
+  left: 0;
+}

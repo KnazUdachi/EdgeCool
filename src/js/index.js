@@ -1,0 +1,6 @@
+import '../scss/style.scss'
+import './swiper.js'
+import './button.js'
+import './side-open.js'
+import './feedback-open.js'
+import './call-open.js'

@@ -1,0 +1,136 @@
+@import 'swiper/swiper-bundle';
+@import './colors.scss';
+@import './side.scss';
+@import './feedback.scss';
+@import '../fonts/stylesheet.css';
+@import './header.scss';
+@import './logos.scss';
+@import './repair.scss';
+@import './prices.scss';
+@import './footer.scss';
+@import './call.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'TT Lakes', sans-serif;
+  background-color: $background-color;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.title {
+  height: 56px;
+  background: linear-gradient(90deg, $background-color, $secondary-color);
+  border-top: 1px solid $border-color;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .title--mobile {
+    height: 80px;
+  }
+}
+
+h2 {
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $heading-color;
+  margin-left: 16px;
+
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 1120px;
+    margin: 0;
+  }
+  @media (min-width: 1444px) {
+    width: 1120px;
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
